@@ -1,4 +1,4 @@
-public class Cat extends Animal {
+public class Cat extends Animal implements PrintsName {
     private boolean isSphynx;
 
     public Cat( String name, int a, int h, int w, boolean f){
@@ -11,7 +11,6 @@ public class Cat extends Animal {
 
     @Override
     public void print() {
-        super.print();
         if(isSphynx) {
             System.out.println("I am from sphynx family");
         }

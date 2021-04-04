@@ -15,12 +15,5 @@ public class Animal {
         weight = w;
         hasFur = f;
     }
-
-    public void print() {
-        System.out.println("Name=" + name + " " + "Age=" + age + " " + "Height=" + height + " "+ "Weight="
-                + weight+ " " + "Fur" + hasFur );
-    }
-
-
 }
 
