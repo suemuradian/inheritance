@@ -11,12 +11,15 @@ public class Main {
         giraffe.print();
 
 
-        Elephant elephant= new Elephant ("Hrach",3, 200,300,false);
-        elephant.print();
-
         Rhino rhino = new Rhino("Lyudvig",10,250,300, false);
         rhino.print();
-
+        try {
+            rhino.setAge(-2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Elephant elephant= new Elephant (null,3, 200,300,false);
+        elephant.print();
 
 
     }

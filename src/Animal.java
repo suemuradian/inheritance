@@ -9,11 +9,22 @@ public class Animal {
 
     public Animal(String name, int a, int h,
                   int w, boolean f) {
+        if (name == null || name.equals("")) {
+            throw new NewException();
+        }
         this.name = name;
         age = a;
         height = h;
         weight = w;
         hasFur = f;
+    }
+
+    public void setAge(int age1) throws Exception {
+        if (age1 < 0) {
+            throw new Exception();
+        }
+        age = age1;
+
     }
 }
 
